@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.paginationbox {
+    float: right;
+}
+
+.paginationInfo {
+    display: block;
+    float: right;
+    font-size: 12px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 16px;
+}
+
+.newscenter tbody tr td{
+    height: 42px;
+}
+
+.newscenter tbody tr td a {
+    width: 560px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: darkslategray;
+    display: block;
+    white-space: nowrap;
+}
+
+.newscenter tbody tr td a:hover {
+    text-decoration: none;
+    color: #efa923;
+}
+
+.newscenter tbody tr td span {
+    color: lightslategray;
+}

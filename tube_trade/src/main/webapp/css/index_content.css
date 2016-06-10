@@ -11,17 +11,23 @@
 }
 
 .mid1 span.span1 {
-    color: black;
+    color: #337AB7;
     font-size: 24px;
     display: block;
     width: 300px;
-    border-bottom: 2px dashed black;
+    border-bottom: 2px dashed #337AB7;
+}
+
+.mid1 span.span2 {
+    width: 100%;
+    margin-top: 20px;
 }
 
 .introduce {
     text-indent: 2em;
-    color: lightslategray;
+    color: dimgray;
     font-size: 14px;
+    line-height: 24px;
 }
 
 .news_date {
@@ -31,7 +37,7 @@
 .com_news_lst li a {
     overflow: hidden;
     text-overflow: ellipsis;
-    color: slategray;
+    color: dimgray;
     display: block;
     white-space: nowrap;
 }
@@ -45,7 +51,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: slategray;
+    color: dimgray;
     display: block;
 }
 
@@ -55,7 +61,7 @@
 }
 
 .contact_table tr td {
-    color: lightslategray;
+    color: dimgray;
     width: 20%;
 }
 
@@ -113,6 +119,14 @@
     color: #efa923;
 }
 
+.articlebox h2, h3 {
+    text-align: center;
+}
+
+.articlemeta {
+    text-align: center;
+}
+
 .btm {
     background-color: ghostwhite;
     color: lightslategray;
@@ -127,4 +141,11 @@
 
 .btm span {
     float: right;
+}
+
+#map {
+    margin-top:30px;
+    margin-left:30px;
+    width:630px;
+    height:500px;
 }

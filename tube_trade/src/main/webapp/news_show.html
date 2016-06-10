@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="Kunlun International trade Limited">
+    <meta name="Keywords" content="张家港昆仑国际管业贸易有限公司">
+    <meta name="Description"
+          content="The company specializes in the production of seamless tubes of titanium, Monel tubes, seamless tubes, zirconium, tantalum and niobium seamless pipe and other non-ferrous metal pipe industry.">
+    <title>Kunlun International trade Limited</title>
+
+    <link rel="stylesheet" type="text/css" href="css/nav_bar.css">
+    <link rel="stylesheet" type="text/css" href="css/index_content.css">
+
+    <link rel="stylesheet" type="text/css" href="uikit/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="uikit/css/components/slidenav.min.css">
+    <link rel="stylesheet" type="text/css" href="uikit/css/components/slidenav.min.css">
+    <link rel="stylesheet" type="text/css" href="uikit/css/components/slideshow.min.css">
+    <link rel="stylesheet" type="text/css" href="uikit/css/components/dotnav.min.css">
+    <link rel="stylesheet" type="text/css" href="uikit/css/components/search.min.css">
+
+    <script src="script/jquery.min.js"></script>
+    <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/components/slideshow.min.js"></script>
+    <script src="uikit/js/components/slideshow-fx.min.js"></script>
+    <script src="uikit/js/components/search.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/panel_list.css">
+    <link href="bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#menu_nav").find("li a").wrapInner('<span class="out"></span>');
+        $("#menu_nav").find("li a").each(function () {
+            $('<span class="over">' + $(this).text() + '</span>').appendTo(this);
+        });
+        $("#menu_nav").find("li a").hover(function () {
+            $(".out", this).stop().animate({'top': '48px'}, 200);
+            $(".over", this).stop().animate({'top': '0px'}, 200);
+        }, function () {
+            $(".out", this).stop().animate({'top': '0px'}, 200);
+            $(".over", this).stop().animate({'top': '-48px'}, 200);
+        });
+    });
+</script>
+
+<!--top logo begin-->
+<div class="top1">
+    <div class="top2">
+        <h1><a href="javascript:void(0)"><img src="images/logo.png" style="width:480px;"></a></h1>
+        <form class="uk-search searchform" data-uk-search action="index.html">
+            <input class="uk-search-field searchbox" type="search" placeholder="Search...">
+        </form>
+    </div>
+</div>
+<!--top logo end-->
+
+
+<!--navbar begin-->
+<div id="menu_nav" class="menu">
+    <ul>
+        <li><a href="index_tube.html" title="Home Page">Home Page</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="products_show.html">Products</a></li>
+        <li><a href="qualification_show.html">Qualification</a></li>
+        <li><a href="news_center.html">News Center</a></li>
+        <li><a href="equipment_show.html">Equipment</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+    </ul>
+    <div class="cls"></div>
+</div>
+
+<!--navbar end-->
+
+
+<!--slideshow begin-->
+<div class="uk-slidenav-position slideshow" data-uk-slideshow="{kenburns:true}">
+    <ul class="uk-slideshow" data-uk-slideshow>
+        <li><img src="images/index/banner1.jpg" width="960" height="288"/></li>
+        <li><img src="images/index/banner2.jpg" width="960" height="288"/></li>
+        <li><img src="images/index/banner3.jpg" width="960" height="288"/></li>
+    </ul>
+    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"
+       style="color: rgba(255,255,255,0.4)"></a>
+    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"
+       style="color: rgba(255,255,255,0.4)"></a>
+    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+        <li data-uk-slideshow-item="0"><a href="javascript:void(0);">Item 1</a></li>
+        <li data-uk-slideshow-item="1"><a href="javascript:void(0);">Item 2</a></li>
+        <li data-uk-slideshow-item="2"><a href="javascript:void(0);">Item 3</a></li>
+    </ul>
+</div>
+<!--slideshow end-->
+
+<div class="content">
+    <hr class="uk-grid-divider">
+
+    <!--left list begin-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default panel-primary list_heading">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Product Category</div>
+                    <!-- List group -->
+                    <ul class="list-group">
+                        <!--
+                        钛及钛合金管
+                        镍及镍铜合金管
+                        锆及锆合金管
+                        -->
+                        <li class="list-group-item list-group-item-info">
+                            <a href="#">Titanium and titanium alloy tube</a>
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            <a href="#">Nickel and nickel-copper alloy tube</a>
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            <a href="#">Zirconium and zirconium alloy tube</a>
+                        </li>
+                        <li class="list-group-item contactImg" style="padding: 1px;">
+                            <img src="images/contact.jpg"/>
+                        </li>
+                        <li class="list-group-item list-group-item-info contactUs">
+                            <a href="#">Contact Us</a> |
+                            <a href="#">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <table class="uk-table contact_table">
+                    <tbody>
+                    <tr>
+                        <td colspan="2"><strong>Kunlun International trade Limited (Export Department)</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tel: </strong></td>
+                        <td>
+                            <mark>+86-151-5158-4165</mark>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fax: </strong></td>
+                        <td>
+                            <mark>0512-58489880</mark>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>E-mail: </strong></td>
+                        <td>
+                            <mark>XXX@XXXX.com</mark>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong>Address: </strong>
+                            <span style="margin-left: 10px;">Developing Zone, FengHuang Town, Zhangjiagang City,Jiangwu,China 215600</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-md-9">
+                <ul class="uk-breadcrumb">
+                    <li><span>Location</span></li>
+                    <li><a href="">Home Page</a></li>
+                    <li><a href="">News Center</a></li>
+                    <li class="uk-active"><span>China circlip pliers industry analysis and market forecast report 2017 --2013</span></li>
+                </ul>
+
+                <!--news show begin-->
+                <div class="mid1">
+                    <span class="span1 span2"><i class="uk-icon-newspaper-o uk-icon-small"></i> News Center</span>
+                </div>
+                <article class="uk-article articlebox">
+                    <h3>China circlip pliers industry analysis and market forecast report 2017 --2013</h3>
+                    <p class="uk-article-meta articlemeta">Jack was written in the December 12, 2012</p>
+                    <p class="introduce">
+                        Kunlun International trade Limited is a reliable Manufacturer and Exporter of Titanium Tubes,
+                        Bars, Plates. Founded in Suzhou 2015, It is 100km away from Shanghai.
+                    </p>
+                    <p class="introduce">
+                        Kunlun Covers 13 thousand Square meters of it's building are.Total asset values 50 million RMB
+                        for the first stage investment, Has introduced a couple of international advanced production
+                        lines and test lines, such as Cold Pilger machines, Cold Precision Pilger Machines, Vacuum
+                        furnaces, Impact Test, Machanical Properties test, Eddy Current Test, Ultrasonic Test,
+                        Hydrostatic Test, Metallurgical Microscope Test and So on.
+                    </p>
+                    <p class="introduce">
+                        Kunlun trade is committed to providing safe and reliable titanium metal for the global
+                        industrial equipment with unremitting efforts. Manufacturer have got certificates like DNV, ISO
+                        9001:2008, Freedom Adapts An Integrate Production System Which Includes Melting, Titanium
+                        Forging, Rolling, Drawing, Fabricating And Testing, Which Enable Us Supply Various Range Of
+                        Sizes, Covering All Grades Of CP Titanium And Most Titanium Alloys. Our Main Milling Products
+                        Are Titanium Seamless Tubes, Pipes, Rod & Bars, Profiles, Sheets And Nickel Alloy Tubes.
+                    </p>
+                    <hr class="uk-article-divider">
+                </article>
+                <!--news show end-->
+
+            </div>
+        </div>
+    </div>
+
+    <!--left list end-->
+
+    <!--bottom bar begin-->
+    <div class="btm">
+        <a href="#">Contact Us</a> | <a href="#">Copyright Notice</a>
+        <span>
+            <strong>Copyright © 2016 Kunlun International trade Limited All rights reserved</strong>
+        </span>
+    </div>
+    <!--bottom bar end-->
+    <script>
+        $('.btm').css('marginTop', '36px');
+    </script>
+</div>
+</body>
+</html>
