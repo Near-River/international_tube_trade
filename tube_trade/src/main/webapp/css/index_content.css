@@ -21,6 +21,7 @@
 .introduce {
     text-indent: 2em;
     color: lightslategray;
+    font-size: 14px;
 }
 
 .news_date {
@@ -64,17 +65,36 @@
 
 .tablist li {
     font-size: 14px;
-    background-color: #F6F7F9;
 }
 
 .contentbox {
+    padding-top: 10px;
     border: 1px solid #ddd;
     width: 90%;
     height: 240px;
+    position: absolute;
+}
+
+.moreproduct {
+    float: right;
+    font-size: 14px;
+}
+
+.moreproduct a {
+    color: lightslategray;
+}
+
+.moreproduct a:hover {
+    text-decoration: none;
+    color: #efa923;
 }
 
 .contentbox ul li img {
     height: 130px;
+}
+
+.qualificationbox ul li img {
+    height: 168px;
 }
 
 .tubelink {
@@ -93,18 +113,16 @@
     color: #efa923;
 }
 
-.moreproduct {
-    float:right;
-    font-size:14px;
-    color:gray;
-}
-
 .btm {
     background-color: ghostwhite;
     color: lightslategray;
     padding: 20px;
     width: 100%;
-    margin-top: 36px;
+    margin-top: 108px;
+}
+
+.btm a {
+    color: lightslategray;
 }
 
 .btm span {
