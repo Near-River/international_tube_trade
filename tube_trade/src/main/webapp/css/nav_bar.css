@@ -6,6 +6,7 @@ body {
     font-size: 13px;
     color: #cccccc;
     background: url(../images/bg01.jpg) repeat;
+    background-size:cover;
 }
 
 .cls {
@@ -18,13 +19,14 @@ a:focus {
 
 .top1 {
     /*background: url(../images/index/top_bg.jpg) repeat-x;*/
+    background: ghostwhite;
     height: 100px;
-    width: 960px;
+    width: 1080px;
     margin: 0 auto;
 }
 
 .top2 {
-    width: 960px;
+    width: 1080px;
     margin: 0 auto;
     position: relative;
 }
@@ -41,8 +43,9 @@ a:focus {
     right: 30px;
     border: 1px solid cornflowerblue;
     border-radius: 16px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    background-color: white;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
 }
 
 .searchbox {
@@ -55,7 +58,7 @@ a:focus {
     height: 40px;
     display: block;
     padding: 0;
-    width: 960px;
+    width: 1080px;
     margin: 0 auto 0 auto;
 }
 
@@ -63,6 +66,7 @@ a:focus {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .menu ul li {
@@ -71,6 +75,7 @@ a:focus {
     position: relative;
     line-height: 40px;
     text-align: center;
+    width:120px;
 }
 
 .menu ul li a {
@@ -102,7 +107,7 @@ a:focus {
 
 #menu_nav {
     /*background: url(../images/index/s_03.jpg) repeat;*/
-    background-color:silver;
+    background-color: silver;
 }
 
 #menu_nav ul li a {
@@ -113,11 +118,12 @@ a:focus {
     color: #FFF;
     height: 40px;
     width: 111px;
-    background: url(../images/index/w_03.jpg) repeat;
+    /*background: url(../images/index/w_03.jpg) repeat;*/
+    background-color: cornflowerblue;
 }
 
 .slideshow {
-    width: 960px;
+    width: 1080px;
     padding: 0;
     margin: 6px auto;
 }

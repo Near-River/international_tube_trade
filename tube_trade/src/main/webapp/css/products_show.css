@@ -1,20 +1,28 @@
 @charset "utf-8";
 
-#productsbox{
-    margin-top:30px;
+#productsbox {
+    margin-top: 30px;
 }
+
 .gallery {
     width: 100%;
     height: 150px;
 }
 
+.gallery2 {
+    width: 100%;
+    height: 168px;
+    margin-bottom:-18px;
+}
+
 .tubebox {
     text-align: center;
+    background-color: silver;
 }
 
 .tubebox a {
     text-decoration: none;
-    color: darkslategray;
+    color: white;
 }
 
 .tubebox a:hover {
@@ -22,15 +30,15 @@
     color: #efa923;
 }
 
-.paginationbox{
-    float:right;
+.paginationbox {
+    float: right;
 }
 
-.paginationInfo{
-    display:block;
+.paginationInfo {
+    display: block;
     float: right;
-    font-size:12px;
-    height:40px;
-    margin-top:30px;
-    margin-left:16px;
+    font-size: 12px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 16px;
 }
