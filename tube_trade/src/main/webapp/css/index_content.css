@@ -11,6 +11,20 @@
     margin-bottom: 20px;
 }
 
+.mid2 {
+    background-color: ghostwhite;
+    padding-top:20px;
+}
+
+.mid2 span.span1 {
+    color: #337AB7;
+    font-size: 32px;
+    text-align:center;
+    display: block;
+    width: 100%;
+    height:60px;
+}
+
 .mid1 span.span3 {
     font-size: 32px;
     display: block;

@@ -14,7 +14,8 @@
 }
 
 .newscenter tbody tr td{
-    height: 42px;
+    padding-top:13px;
+    height: 45px;
 }
 
 .newscenter tbody tr td a {
