@@ -128,15 +128,14 @@
 }
 
 .btm {
-    background-color: ghostwhite;
-    color: lightslategray;
+    color: darkslategray;
     padding: 20px;
     width: 100%;
     margin-top: 108px;
 }
 
 .btm a {
-    color: lightslategray;
+    color: darkslategray;
 }
 
 .btm span {

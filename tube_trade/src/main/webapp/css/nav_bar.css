@@ -5,6 +5,7 @@ body {
     font-family: "微软雅黑", "宋体", serif;
     font-size: 13px;
     color: #cccccc;
+    background: url(../images/bg01.jpg) repeat;
 }
 
 .cls {
@@ -16,7 +17,7 @@ a:focus {
 }
 
 .top1 {
-    background: url(../images/index/top_bg.jpg) repeat-x;
+    /*background: url(../images/index/top_bg.jpg) repeat-x;*/
     height: 100px;
     width: 960px;
     margin: 0 auto;
@@ -100,7 +101,8 @@ a:focus {
 }
 
 #menu_nav {
-    background: url(../images/index/s_03.jpg) repeat;
+    /*background: url(../images/index/s_03.jpg) repeat;*/
+    background-color:silver;
 }
 
 #menu_nav ul li a {
