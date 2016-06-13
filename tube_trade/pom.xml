@@ -106,6 +106,51 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.6.3</version>
         </dependency>
+        <!-- 富文本编辑器 ckfinder 依赖的 jar 包-->
+        <!-- 引用系统路径下的jar包(项目完成后要在lib下 加上所引用的jar包)-->
+        <dependency>
+            <groupId>com.ckfinder</groupId>
+            <artifactId>CKFinder</artifactId>
+            <version>2.6.0</version>
+            <scope>system</scope>
+            <systemPath>D:/util/jar/CKFinder-2.6.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.ckfinder</groupId>
+            <artifactId>CKFinderPlugin-FileEditor</artifactId>
+            <version>2.6.0</version>
+            <scope>system</scope>
+            <systemPath>D:/util/jar/CKFinderPlugin-FileEditor-2.6.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.ckfinder</groupId>
+            <artifactId>CKFinderPlugin-ImageResize</artifactId>
+            <version>2.6.0</version>
+            <scope>system</scope>
+            <systemPath>D:/util/jar/CKFinderPlugin-ImageResize-2.6.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.ckfinder</groupId>
+            <artifactId>CKFinderPlugin-Watermark</artifactId>
+            <version>2.6.0</version>
+            <scope>system</scope>
+            <systemPath>D:/util/jar/CKFinderPlugin-Watermark-2.6.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jboss-vfs</artifactId>
+            <version>3.2.11.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>net.coobird</groupId>
+            <artifactId>thumbnailator</artifactId>
+            <version>0.4.8</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>zhangjiagang</finalName>

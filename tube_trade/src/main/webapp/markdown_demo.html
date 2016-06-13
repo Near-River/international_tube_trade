@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
+    <script type="text/javascript">
+        editor = null;
+        window.onload = function () {
+            editor = CKEDITOR.replace(
+                    'demotext',
+                    {
+                        uiColor: '#9acfea',
+                        width: 980,
+                        height: 420,
+                        on: {
+                            instanceReady: function (ev) {
+                                this.dataProcessor.writer.setRules('p', {
+                                    indent: false,
+                                    breakBeforeOpen: false,   //<p>之前不加换行
+                                    breakAfterOpen: false,    //<p>之后不加换行
+                                    breakBeforeClose: false,  //</p>之前不加换行
+                                    breakAfterClose: false    //</p>之后不加换行
+                                });
+                            }
+                        },
+                        toolbar :
+                                [
+                                    //加粗     斜体，     下划线      穿过线      下标字        上标字
+                                    ['Bold','Italic','Underline','Strike','Subscript','Superscript'],
+                                    //数字列表          实体列表            减小缩进    增大缩进
+                                    ['NumberedList','BulletedList','-','Outdent','Indent'],
+                                    //左对齐             居中对齐          右对齐          两端对齐
+                                    ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+                                    //超链接 取消超链接 锚点
+                                    ['Link','Unlink','Anchor'],
+                                    //图片   flash    表格       水平线            表情       特殊字符        分页符
+                                    ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+                                    //样式       格式      字体    字体大小
+                                    ['Styles','Format','Font','FontSize'],
+                                    //文本颜色     背景颜色
+                                    ['TextColor','BGColor'],
+                                    //全屏           显示区块
+                                    ['Maximize', 'ShowBlocks','-']
+                                ]
+                    }
+            );
+        };
+    </script>
+
+</head>
+<body>
+
+<div style="width:800px;">
+    <textarea name="demotext" id="demotext" cols="90" rows="8"></textarea>
+</div>
+
+</body>
+</html>
