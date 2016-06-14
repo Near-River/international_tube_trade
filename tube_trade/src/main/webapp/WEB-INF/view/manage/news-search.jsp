@@ -15,9 +15,11 @@
     <style type="text/css">
         .news_content {
             overflow: hidden;
+            -o-text-overflow: ellipsis;
             text-overflow: ellipsis;
+            height:40px;
+            display:block;
             white-space: nowrap;
-            width: 500px;
         }
     </style>
 </head>
@@ -55,7 +57,7 @@
                         <tr>
                             <th>标签ID</th>
                             <th>新闻名称</th>
-                            <th>新闻内容</th>
+                            <th width="40%">新闻内容</th>
                             <th>发布时间</th>
                         </tr>
                         </thead>
@@ -81,9 +83,15 @@
                         <c:if test="${pageBean.currentPage<pageBean.pageCount}">
                             <a href="${ctx}/manage/news/search/${pageBean.currentPage-1}" class="btn">上一页</a>
                         </c:if>
+                        <c:if test="${pageBean.currentPage>=pageBean.pageCount}">
+                            <a href="javascript:void(0)" class="btn">上一页</a>
+                        </c:if>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <c:if test="${pageBean.currentPage>1}">
                             <a href="${ctx}/manage/news/search/${pageBean.currentPage+1}" class="btn">下一页</a>
+                        </c:if>
+                        <c:if test="${pageBean.currentPage<=1}">
+                            <a href="javascript:void(0)" class="btn">下一页</a>
                         </c:if>
                         <a href="${ctx}/manage/news/search/1" class="btn"> >> </a>
                         &nbsp;&nbsp;&nbsp;&nbsp; ${pageBean.currentPage} / ${pageBean.pageCount} 页

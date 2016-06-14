@@ -47,7 +47,7 @@
 
 .introduce {
     text-indent: 2em;
-    color: dimgray;
+    color: darkslategray;
     font-size: 14px;
     line-height: 24px;
 }
@@ -161,6 +161,8 @@
 
 .articlemeta {
     text-align: center;
+    color: lightslategray;
+    font-size:12px;
 }
 
 .btm {

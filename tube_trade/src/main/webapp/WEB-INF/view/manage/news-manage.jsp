@@ -16,9 +16,11 @@
     <style type="text/css">
         .news_content {
             overflow: hidden;
+            -o-text-overflow: ellipsis;
             text-overflow: ellipsis;
+            height:40px;
+            display:block;
             white-space: nowrap;
-            width: 500px;
         }
     </style>
 </head>
@@ -57,7 +59,7 @@
                             <th class="tc" width="5%"></th>
                             <th>标签ID</th>
                             <th>新闻名称</th>
-                            <th>新闻内容</th>
+                            <th width="50%">新闻内容</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -81,7 +83,7 @@
                                     <td class="tc"><input name="id[]" type="checkbox"></td>
                                     <td>${s.count}</td>
                                     <td>${news.title}</td>
-                                    <td class="news_content">${news.content}</td>
+                                    <td class="news_content"><span>${news.content}</span></td>
                                     <td>
                                         <a class="link-update" href="javascript:void(0)"
                                            onclick="openWindowWithName('${ctx}/manage/news/edit/${news.uuid}', '1200', '600', '编辑新闻')">修改</a>
@@ -101,9 +103,15 @@
                         <c:if test="${pageBean.currentPage<pageBean.pageCount}">
                             <a href="${ctx}/manage/news/${pageBean.currentPage-1}" class="btn">上一页</a>
                         </c:if>
+                        <c:if test="${pageBean.currentPage>=pageBean.pageCount}">
+                            <a href="javascript:void(0)" class="btn">上一页</a>
+                        </c:if>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <c:if test="${pageBean.currentPage>1}">
                             <a href="${ctx}/manage/news/${pageBean.currentPage+1}" class="btn">下一页</a>
+                        </c:if>
+                        <c:if test="${pageBean.currentPage<=1}">
+                            <a href="javascript:void(0)" class="btn">下一页</a>
                         </c:if>
                         <a href="${ctx}/manage/news/1" class="btn"> >> </a>
                         &nbsp;&nbsp;&nbsp;&nbsp; ${pageBean.currentPage} / ${pageBean.pageCount}

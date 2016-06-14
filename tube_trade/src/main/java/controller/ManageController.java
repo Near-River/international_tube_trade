@@ -24,15 +24,6 @@ public class ManageController {
         return "manage/manage-home";
     }
 
-    @RequestMapping({"/manage/news/add"})
-    public String manage_news_add(HttpServletRequest request) {
-        HttpSession session = request.getSession();
-        if (session.getAttribute("globalUser") == null) {
-            return "manage/login";
-        }
-        return "manage/news-deploy";
-    }
-
     @RequestMapping(value = "/manage/login")
     public String login(HttpServletRequest request) {
         HttpSession session = request.getSession();

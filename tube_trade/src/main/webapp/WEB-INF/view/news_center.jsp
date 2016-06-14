@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}" scope="request"></c:set>
 
 <!DOCTYPE html>
@@ -67,76 +68,68 @@
                             </div>
                             <table class="uk-table uk-table-hover uk-table-striped newscenter">
                                 <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="news_date">[2015-08-30]</span>
-                                        <a href="${ctx}/news_show.html" title="China circlip pliers industry analysis and market forecast report 2017 --2013">
-                                            <i class="uk-icon-file-text-o uk-icon-small"></i> China circlip pliers
-                                            industry analysis and market forecast report 2017 --2013</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="news_date">[2015-08-30]</span>
-                                        <a href="#" title="China circlip pliers industry market advisory report in 2020 --2015">
-                                            <i class="uk-icon-file-text-o uk-icon-small"></i> China circlip pliers
-                                            industry market advisory report in 2020 --2015</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="news_date">[2014-10-28]</span>
-                                        <a href="#" title="Fixture design standards of trainers">
-                                            <i class="uk-icon-file-text-o uk-icon-small"></i> Fixture design standards
-                                            of trainers</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="news_date">[2015-08-30]</span>
-                                        <a href="#" title="China circlip pliers industry analysis and market forecast report 2017 --2013">
-                                            <i class="uk-icon-file-text-o uk-icon-small"></i> China circlip pliers
-                                            industry analysis and market forecast report 2017 --2013</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="news_date">[2014-10-28]</span>
-                                        <a href="#" title="Fixture design standards of trainers">
-                                            <i class="uk-icon-file-text-o uk-icon-small"></i> Fixture design standards
-                                            of trainers</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="news_date">[2015-08-30]</span>
-                                        <a href="#" title="China circlip pliers industry market advisory report in 2020 --2015">
-                                            <i class="uk-icon-file-text-o uk-icon-small"></i> China circlip pliers
-                                            industry market advisory report in 2020 --2015</a>
-                                    </td>
-                                </tr>
+                                <c:if test="${! empty requestScope.pageBean}">
+                                    <c:forEach var="news" items="${requestScope.pageBean.recordList}" varStatus="s">
+                                        <tr>
+                                            <td>
+                                                <span class="news_date">
+                                                    [<f:formatDate value="${news.createdDate}" pattern="yyyy-MM-dd"/>]
+                                                </span>
+                                                <a href="${ctx}/news/show/${news.uuid}" title="${news.title}">
+                                                    <i class="uk-icon-file-text-o uk-icon-small"></i> ${news.title}</a>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
+                                </c:if>
+                                <c:if test="${empty requestScope.pageBean}">
+                                    没有新闻信息
+                                </c:if>
                                 </tbody>
                             </table>
                             <!--pagination begin-->
                             <nav class="paginationbox">
                                 <ul class="pagination">
-                                    <li>
-                                        <a href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                        </a>
-                                    </li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li>
-                                        <a href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                        </a>
-                                    </li>
+                                    <c:if test="${pageBean.currentPage<pageBean.pageCount}">
+                                        <li>
+                                            <a href="${ctx}/news_center?pageNo=${pageBean.currentPage-1}"
+                                               aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                    </c:if>
+                                    <c:if test="${pageBean.currentPage>=pageBean.pageCount}">
+                                        <li>
+                                            <a href="javascript:void(0)" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                    </c:if>
+
+                                    <c:forEach begin="${pageBean.startPageIndex}" end="${pageBean.endPageIndex}"
+                                               varStatus="s">
+                                        <li <c:if test="${pageBean.currentPage == s.current}">class="active"</c:if>>
+                                            <a href="${ctx}/news_center?pageNo=${s.current}">${s.current}</a>
+                                        </li>
+                                    </c:forEach>
+
+                                    <c:if test="${pageBean.currentPage>1}">
+                                        <li>
+                                            <a href="${ctx}/news_center?pageNo=${pageBean.currentPage+1}"
+                                               aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </c:if>
+                                    <c:if test="${pageBean.currentPage<=1}">
+                                        <li>
+                                            <a href="javascript:void(0)" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </c:if>
+
                                 </ul>
-                                <span class="paginationInfo">Page: 1 / 1 &nbsp;|&nbsp; 12 records / page</span>
+                                <span class="paginationInfo">Page: ${pageBean.currentPage} / ${pageBean.pageCount} &nbsp;|&nbsp; 10 records / page</span>
                             </nav>
                             <!--pagination end-->
 

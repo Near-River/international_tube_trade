@@ -125,6 +125,39 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="uk-grid uk-container-center uk-grid-width-1-3" data-uk-grid-margin>
+                        <div>
+                            <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
+                                <div class="uk-panel-teaser">
+                                    <a href="${ctx}/images/qualifiication/007.JPG" data-lightbox-type="image"
+                                       data-uk-lightbox="{group:'group1'}">
+                                        <img src="${ctx}/images/qualifiication/007.JPG" class="gallery2" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
+                                <div class="uk-panel-teaser">
+                                    <a href="${ctx}/images/qualifiication/008.JPG" data-lightbox-type="image"
+                                       data-uk-lightbox="{group:'group1'}">
+                                        <img src="${ctx}/images/qualifiication/008.JPG" class="gallery2" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
+                                <div class="uk-panel-teaser">
+                                    <a href="${ctx}/images/qualifiication/009.JPG" data-lightbox-type="image"
+                                       data-uk-lightbox="{group:'group1'}">
+                                        <img src="${ctx}/images/qualifiication/009.JPG" class="gallery2" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--qualification show end-->
 
@@ -132,22 +165,22 @@
                 <nav class="paginationbox">
                     <ul class="pagination">
                         <li>
-                            <a href="#" aria-label="Previous">
+                            <a href="javascript:void(0)" aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
+                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
                         <li>
-                            <a href="#" aria-label="Next">
+                            <a href="javascript:void(0)" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
                         </li>
                     </ul>
-                    <span class="paginationInfo">Page: 1 / 1 &nbsp;|&nbsp; 6 records / page</span>
+                    <span class="paginationInfo">Page: 1 / 1 &nbsp;|&nbsp; 9 records / page</span>
                 </nav>
                 <!--pagination end-->
 

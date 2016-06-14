@@ -23,11 +23,12 @@
 </div>
 <div class="container clearfix">
 
-    <%@include file="menu.jsp"%>
+    <%@include file="menu.jsp" %>
 
     <div class="main-wrap">
         <div class="crumb-wrap">
             <div class="crumb-list"><i class="icon-font"></i><a href="${ctx}/manage">首页</a>
+                欢迎登录后台管理平台
             </div>
         </div>
     </div>
