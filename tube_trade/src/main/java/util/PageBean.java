@@ -21,6 +21,8 @@ public class PageBean<T> {
     private Integer totalCount;
     /*当前页存放的对象集合*/
     private List<T> recordList;
+    /*当前页存放的对象个数*/
+    private Integer recordCount;
     /*起始索引页位置*/
     private Integer startPageIndex;
     /*结束索引页位置*/
@@ -34,6 +36,7 @@ public class PageBean<T> {
         this.totalCount = totalCount;
         this.pageSize = pageSize;
         this.recordList = recordList;
+        this.recordCount = recordList.size();
 
         pageCount = (totalCount % pageSize == 0) ? (totalCount / pageSize) : (totalCount / pageSize + 1);
         if (pageCount <= 10) {
