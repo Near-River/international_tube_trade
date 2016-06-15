@@ -11,9 +11,9 @@
             <li>
                 <a href="#"><i class="icon-font">&#xe003;</i>产品中心</a>
                 <ul class="sub-menu">
-                    <li><a href="${ctx}/manage/product"><i class="icon-font">&#xe008;</i>分类管理</a></li>
+                    <li><a href="${ctx}/manage/product/1"><i class="icon-font">&#xe008;</i>分类管理</a></li>
                     <li><a href="${ctx}/manage/product/add"><i class="icon-font">&#xe005;</i>产品发布</a></li>
-                    <li><a href="${ctx}/manage/product/search"><i class="icon-font">&#xe006;</i>产品查询</a></li>
+                    <li><a href="${ctx}/manage/product/search/1"><i class="icon-font">&#xe006;</i>产品查询</a></li>
                 </ul>
             </li>
             <li>

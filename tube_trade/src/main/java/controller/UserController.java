@@ -49,42 +49,7 @@ public class UserController {
 //        }
 //        return "failed";
 //    }
-//
-//    @RequestMapping(value = "/photo/upload", method = RequestMethod.POST)
-//    public String uploadPhoto(@RequestParam(value = "uploadFile", required = false) MultipartFile file,
-//                              HttpServletRequest request) {
-//        User user = (User) request.getSession().getAttribute("globalUser");
-//        if (file != null) {
-//            // 取文件格式后缀名
-//            String type = file.getOriginalFilename().substring(file.getOriginalFilename().indexOf("."));
-//            // 取当前时间戳作为文件名
-//            String filename = System.currentTimeMillis() + type;
-//            // 文件存放的物理路径
-//            String path = request.getSession().getServletContext().getRealPath("/images/gallery/" + filename);
-//            File destFile = new File(path);
-//            try {
-//                // 复制临时文件到指定目录路径下
-//                FileUtils.copyInputStreamToFile(file.getInputStream(), destFile);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            Picture picture = new Picture();
-//            picture.setUuid(UUIDUtils.getUUID());
-//            picture.setName(filename);
-//            picture.setUrl("images/gallery/" + filename);
-//            picture.setUserId(user.getUuid());
-//            picture.setUserName(user.getLoginName());
-//            picture.setCreatedDate(new Date());
-//            picture.setLikeNumber(0);
-//            pictureService.save(picture);
-//            request.setAttribute("message", "success");
-//        } else {
-//            request.setAttribute("message", "failed");
-//        }
-//
-//        return "redirect:../../user/userRegion/" + user.getUuid();
-//    }
-//
+
 //    @RequestMapping(value = "/manage/deleteUser")
 //    @ResponseBody
 //    public String deleteUser(String uuids) {

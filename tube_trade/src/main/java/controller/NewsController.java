@@ -14,12 +14,13 @@ import javax.servlet.http.HttpSession;
 import java.util.Date;
 
 @Controller
+@RequestMapping({"/manage/news"})
 public class NewsController {
 
     @Autowired
     private NewsDao newsService;
 
-    @RequestMapping({"/manage/news/add"})
+    @RequestMapping({"/add"})
     public String manage_news_add(HttpServletRequest request) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
@@ -28,7 +29,7 @@ public class NewsController {
         return "manage/news-deploy";
     }
 
-    @RequestMapping({"/manage/news/{pageNo}"})
+    @RequestMapping({"/{pageNo}"})
     public String manage_news(HttpServletRequest request, @PathVariable("pageNo") String pageNo) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
@@ -41,7 +42,7 @@ public class NewsController {
         return "manage/news-manage";
     }
 
-    @RequestMapping({"/manage/news/search/{pageNo}"})
+    @RequestMapping({"/search/{pageNo}"})
     public String manage_news_search(HttpServletRequest request, @PathVariable("pageNo") String pageNo) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
@@ -54,7 +55,7 @@ public class NewsController {
         return "manage/news-search";
     }
 
-    @RequestMapping({"/manage/news/edit/{news_id}"})
+    @RequestMapping({"/edit/{news_id}"})
     public String manage_news_edit(HttpServletRequest request, @PathVariable("news_id") String news_id) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
@@ -68,7 +69,7 @@ public class NewsController {
         return "manage/news-edit";
     }
 
-    @RequestMapping({"/manage/news/delete/{news_id}"})
+    @RequestMapping({"/delete/{news_id}"})
     public String manage_news_delete(HttpServletRequest request, @PathVariable("news_id") String news_id) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
@@ -80,19 +81,20 @@ public class NewsController {
         return "manage/news-manage";
     }
 
-    @RequestMapping({"/manage/news/save"})
+    @RequestMapping({"/save"})
     public String manage_news_save(HttpServletRequest request, News news) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
             return "manage/login";
         }
-        if (news.getTitle().equals("") || news.getContent().equals("")) {
+        if (news.getTitle().equals("")) {
             return "manage/news-deploy";
         }
         if (news.getUuid() == null) {
             news.setUuid(UUIDUtils.getUUID());
             news.setCreatedDate(new Date());
             newsService.save(news);
+            return "manage/news-search";
         } else {
             News old_news = newsService.findById(news.getUuid());
             old_news.setTitle(news.getTitle());
