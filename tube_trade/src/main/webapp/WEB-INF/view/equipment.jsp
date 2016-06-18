@@ -124,7 +124,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
+                    <div class="uk-grid uk-container-center uk-grid-width-1-3" data-uk-grid-margin>
                         <div>
                             <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
                                 <div class="uk-panel-teaser">
@@ -145,42 +147,54 @@
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
+                                <div class="uk-panel-teaser">
+                                    <a href="${ctx}/images/equipment/009.JPG" data-lightbox-type="image"
+                                       data-uk-lightbox="{group:'group1'}">
+                                        <img src="${ctx}/images/equipment/009.JPG" class="gallery2" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <!--equipment show end-->
-
-                <!--pagination begin-->
-                <nav class="paginationbox">
-                    <ul class="pagination">
-                        <li>
-                            <a href="javascript:void(0)" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="active"><a href="javascript:void(0)">1</a></li>
-                        <li><a href="javascript:void(0)">2</a></li>
-                        <li><a href="javascript:void(0)">3</a></li>
-                        <li><a href="javascript:void(0)">4</a></li>
-                        <li><a href="javascript:void(0)">5</a></li>
-                        <li>
-                            <a href="javascript:void(0)" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <span class="paginationInfo">Page: 1 / 1 &nbsp;|&nbsp; 9 records / page</span>
-                </nav>
-                <!--pagination end-->
-
             </div>
+            <!--equipment show end-->
+
+            <!--pagination begin-->
+            <nav class="paginationbox">
+                <ul class="pagination">
+                    <li>
+                        <a href="javascript:void(0)" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li>
+                        <a href="javascript:void(0)" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="paginationInfo">Page: 1 / 1 &nbsp;|&nbsp; 9 records / page</span>
+            </nav>
+            <!--pagination end-->
+
         </div>
     </div>
+</div>
 
-    <!--left list end-->
+<!--left list end-->
 
-    <hr class="uk-news-divider">
+<hr class="uk-news-divider">
 
-    <%@include file="common/bottom.jsp" %>
+<%@include file="common/bottom.jsp" %>
 
 </div>
 </body>

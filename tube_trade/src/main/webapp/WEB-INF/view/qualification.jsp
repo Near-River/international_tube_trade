@@ -147,16 +147,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
-                                <div class="uk-panel-teaser">
-                                    <a href="${ctx}/images/qualifiication/009.JPG" data-lightbox-type="image"
-                                       data-uk-lightbox="{group:'group1'}">
-                                        <img src="${ctx}/images/qualifiication/009.JPG" class="gallery2" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!--qualification show end-->

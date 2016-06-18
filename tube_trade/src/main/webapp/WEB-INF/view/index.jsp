@@ -132,19 +132,22 @@
                                 <div class="uk-grid uk-width-medium-3-4 uk-slidenav-position"
                                      data-uk-slider="{autoplay:true, autoplayInterval:2000}">
                                     <div class="uk-slider-container contentbox">
-                                        <h3>Product Display<span class="moreproduct"><a href="#">More<i
+                                        <h3>Product Display<span class="moreproduct"><a href="${ctx}/products">More<i
                                                 class="uk-icon-angle-double-right uk-icon-small"></i></a></span>
                                         </h3>
                                         <ul class="uk-grid uk-slider uk-grid-width-medium-1-2" about="">
-                                            <li><img src="${ctx}/images/tube/tube_01.jpg" width="200" height="200" alt="">
+                                            <li><img src="${ctx}/images/tube/tube_01.jpg" width="200" height="200"
+                                                     alt="">
                             <span class="tubelink"><a class="uk-link"
                                                       href="#">Titanium and titanium alloy tube</a></span>
                                             </li>
-                                            <li><img src="${ctx}/images/tube/tube_02.jpg" width="200" height="200" alt="">
+                                            <li><img src="${ctx}/images/tube/tube_02.jpg" width="200" height="200"
+                                                     alt="">
                             <span class="tubelink"><a class="uk-link"
                                                       href="#">Titanium and titanium alloy tube</a></span>
                                             </li>
-                                            <li><img src="${ctx}/images/tube/tube_03.jpg" width="200" height="200" alt="">
+                                            <li><img src="${ctx}/images/tube/tube_03.jpg" width="200" height="200"
+                                                     alt="">
                             <span class="tubelink"><a class="uk-link"
                                                       href="#">Titanium and titanium alloy tube</a></span>
                                             </li>
@@ -161,7 +164,8 @@
                                 <div class="uk-grid uk-width-medium-3-4 uk-slidenav-position"
                                      data-uk-slider="{autoplay:true, autoplayInterval:2000}">
                                     <div class="uk-slider-container contentbox qualificationbox">
-                                        <h3>Qualification Display<span class="moreproduct"><a href="#">More<i
+                                        <h3>Qualification Display<span class="moreproduct"><a
+                                                href="${ctx}/qualification">More<i
                                                 class="uk-icon-angle-double-right uk-icon-small"></i></a></span>
                                         </h3>
                                         <ul class="uk-grid uk-slider uk-grid-width-medium-1-2" about="">
@@ -187,15 +191,18 @@
                                 <div class="uk-grid uk-width-medium-3-4 uk-slidenav-position"
                                      data-uk-slider="{autoplay:true, autoplayInterval:2000}">
                                     <div class="uk-slider-container contentbox qualificationbox">
-                                        <h3>Equipment Display<span class="moreproduct"><a href="#">More<i
+                                        <h3>Equipment Display<span class="moreproduct"><a href="${ctx}/equipment">More<i
                                                 class="uk-icon-angle-double-right uk-icon-small"></i></a></span>
                                         </h3>
                                         <ul class="uk-grid uk-slider uk-grid-width-medium-1-2" about="">
-                                            <li><img src="${ctx}/images/equipment/001.JPG" width="200" height="200" alt="">
+                                            <li><img src="${ctx}/images/equipment/001.JPG" width="200" height="200"
+                                                     alt="">
                                             </li>
-                                            <li><img src="${ctx}/images/equipment/002.JPG" width="200" height="200" alt="">
+                                            <li><img src="${ctx}/images/equipment/002.JPG" width="200" height="200"
+                                                     alt="">
                                             </li>
-                                            <li><img src="${ctx}/images/equipment/003.JPG" width="200" height="200" alt="">
+                                            <li><img src="${ctx}/images/equipment/003.JPG" width="200" height="200"
+                                                     alt="">
                                             </li>
                                         </ul>
                                     </div>
