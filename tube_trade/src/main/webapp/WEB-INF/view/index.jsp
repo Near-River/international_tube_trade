@@ -85,21 +85,21 @@
                             <a href="#" title="China circlip pliers industry market advisory report in 2020 --2015">
                                 <i class="uk-icon-angle-double-right uk-icon-small"></i> China circlip pliers industry
                                 market advisory report in 2020 --2015</a></li>
-                        <li class="list-group-item"><span class="news_date">[2014-10-28]</span>
+                        <li class="list-group-item"><span class="news_date">[2015-10-28]</span>
                             <a href="#" title="Fixture design standards of trainers">
                                 <i class="uk-icon-angle-double-right uk-icon-small"></i> Fixture design standards of
                                 trainers</a>
                         </li>
-                        <li class="list-group-item"><span class="news_date">[2014-10-28]</span>
+                        <li class="list-group-item"><span class="news_date">[2015-10-28]</span>
                             <a href="#" title="Circlip pliers distinction">
                                 <i class="uk-icon-angle-double-right uk-icon-small"></i> Circlip pliers distinction</a>
                         </li>
-                        <li class="list-group-item"><span class="news_date">[2014-10-28]</span>
+                        <li class="list-group-item"><span class="news_date">[2015-10-28]</span>
                             <a href="#"
                                title="Clamps to press the use of features can be divided into several categories?">
                                 <i class="uk-icon-angle-double-right uk-icon-small"></i> Clamps to press the use of
                                 features can be divided into several categories?</a></li>
-                        <li class="list-group-item"><span class="news_date">[2014-10-28]</span>
+                        <li class="list-group-item"><span class="news_date">[2015-10-28]</span>
                             <a href="#"
                                title="Fixture in the purchase process should pay attention to what the problem?">
                                 <i class="uk-icon-angle-double-right uk-icon-small"></i> Fixture in the purchase process
@@ -136,20 +136,15 @@
                                                 class="uk-icon-angle-double-right uk-icon-small"></i></a></span>
                                         </h3>
                                         <ul class="uk-grid uk-slider uk-grid-width-medium-1-2" about="">
-                                            <li><img src="${ctx}/images/tube/tube_01.jpg" width="200" height="200"
-                                                     alt="">
-                            <span class="tubelink"><a class="uk-link"
-                                                      href="#">Titanium and titanium alloy tube</a></span>
+                                            <%--钛及钛合金管--%>
+                                            <li><img src="${ctx}/images/tube/tube_01.jpg" width="200" height="200" alt="">
+                            <span class="tubelink"><a class="uk-link" href="${ctx}/products/show/1">Titanium and titanium alloy tube</a></span>
                                             </li>
-                                            <li><img src="${ctx}/images/tube/tube_02.jpg" width="200" height="200"
-                                                     alt="">
-                            <span class="tubelink"><a class="uk-link"
-                                                      href="#">Titanium and titanium alloy tube</a></span>
+                                            <li><img src="${ctx}/images/tube/tube_02.jpg" width="200" height="200" alt="">
+                            <span class="tubelink"><a class="uk-link" href="${ctx}/products/show/1">Titanium and titanium alloy tube</a></span>
                                             </li>
-                                            <li><img src="${ctx}/images/tube/tube_03.jpg" width="200" height="200"
-                                                     alt="">
-                            <span class="tubelink"><a class="uk-link"
-                                                      href="#">Titanium and titanium alloy tube</a></span>
+                                            <li><img src="${ctx}/images/tube/tube_03.jpg" width="200" height="200" alt="">
+                            <span class="tubelink"><a class="uk-link" href="${ctx}/products/show/1">Titanium and titanium alloy tube</a></span>
                                             </li>
                                         </ul>
                                     </div>
@@ -164,19 +159,15 @@
                                 <div class="uk-grid uk-width-medium-3-4 uk-slidenav-position"
                                      data-uk-slider="{autoplay:true, autoplayInterval:2000}">
                                     <div class="uk-slider-container contentbox qualificationbox">
-                                        <h3>Qualification Display<span class="moreproduct"><a
-                                                href="${ctx}/qualification">More<i
+                                        <h3>Qualification Display<span class="moreproduct"><a href="${ctx}/qualification">More<i
                                                 class="uk-icon-angle-double-right uk-icon-small"></i></a></span>
                                         </h3>
                                         <ul class="uk-grid uk-slider uk-grid-width-medium-1-2" about="">
-                                            <li><img src="${ctx}/images/qualifiication/001.JPG" width="200" height="200"
-                                                     alt="">
+                                            <li><img src="${ctx}/images/qualifiication/001.JPG" width="200" height="200" alt="">
                                             </li>
-                                            <li><img src="${ctx}/images/qualifiication/002.JPG" width="200" height="200"
-                                                     alt="">
+                                            <li><img src="${ctx}/images/qualifiication/002.JPG" width="200" height="200" alt="">
                                             </li>
-                                            <li><img src="${ctx}/images/qualifiication/003.JPG" width="200" height="200"
-                                                     alt="">
+                                            <li><img src="${ctx}/images/qualifiication/003.JPG" width="200" height="200" alt="">
                                             </li>
                                         </ul>
                                     </div>
@@ -195,14 +186,11 @@
                                                 class="uk-icon-angle-double-right uk-icon-small"></i></a></span>
                                         </h3>
                                         <ul class="uk-grid uk-slider uk-grid-width-medium-1-2" about="">
-                                            <li><img src="${ctx}/images/equipment/001.JPG" width="200" height="200"
-                                                     alt="">
+                                            <li><img src="${ctx}/images/equipment/001.JPG" width="200" height="200" alt="">
                                             </li>
-                                            <li><img src="${ctx}/images/equipment/002.JPG" width="200" height="200"
-                                                     alt="">
+                                            <li><img src="${ctx}/images/equipment/002.JPG" width="200" height="200" alt="">
                                             </li>
-                                            <li><img src="${ctx}/images/equipment/003.JPG" width="200" height="200"
-                                                     alt="">
+                                            <li><img src="${ctx}/images/equipment/003.JPG" width="200" height="200" alt="">
                                             </li>
                                         </ul>
                                     </div>

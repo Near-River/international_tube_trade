@@ -14,13 +14,13 @@
         锆及锆合金管
         -->
         <li class="list-group-item list-group-item-info">
-            <a href="#">Titanium and titanium alloy tube</a>
+            <a href="${ctx}/products/show/1">Titanium and titanium alloy tubes</a>
         </li>
         <li class="list-group-item list-group-item-info">
-            <a href="#">Nickel and nickel-copper alloy tube</a>
+            <a href="${ctx}/products/show/2">Nickel and nickel-copper alloy tubes</a>
         </li>
         <li class="list-group-item list-group-item-info">
-            <a href="#">Zirconium and zirconium alloy tube</a>
+            <a href="${ctx}/products/show/3">Zirconium and zirconium alloy tubes</a>
         </li>
         <li class="list-group-item contactImg" style="padding: 1px;">
             <img src="${ctx}/images/contact.jpg"/>

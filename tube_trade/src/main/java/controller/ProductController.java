@@ -26,7 +26,7 @@ public class ProductController {
     private ProductDao productService;
 
     @RequestMapping({"/add"})
-    public String manage_news_add(HttpServletRequest request) {
+    public String manage_product_add(HttpServletRequest request) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
             return "manage/login";
@@ -35,7 +35,7 @@ public class ProductController {
     }
 
     @RequestMapping({"/{pageNo}"})
-    public String manage_news(HttpServletRequest request, @PathVariable("pageNo") String pageNo) {
+    public String manage_product(HttpServletRequest request, @PathVariable("pageNo") String pageNo) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
             return "manage/login";
@@ -48,7 +48,7 @@ public class ProductController {
     }
 
     @RequestMapping({"/search/{pageNo}"})
-    public String manage_news_search(HttpServletRequest request, @PathVariable("pageNo") String pageNo) {
+    public String manage_product_search(HttpServletRequest request, @PathVariable("pageNo") String pageNo) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
             return "manage/login";
@@ -61,7 +61,7 @@ public class ProductController {
     }
 
     @RequestMapping({"/edit/{product_id}"})
-    public String manage_news_edit(HttpServletRequest request, @PathVariable("product_id") String product_id) {
+    public String manage_product_edit(HttpServletRequest request, @PathVariable("product_id") String product_id) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
             return "manage/login";
@@ -75,7 +75,7 @@ public class ProductController {
     }
 
     @RequestMapping({"/delete/{product_id}"})
-    public String manage_news_delete(HttpServletRequest request, @PathVariable("product_id") String product_id) {
+    public String manage_product_delete(HttpServletRequest request, @PathVariable("product_id") String product_id) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {
             return "manage/login";
@@ -87,7 +87,7 @@ public class ProductController {
     }
 
     @RequestMapping({"/save"})
-    public String manage_news_save(@RequestParam(value = "uploadFile", required = false) MultipartFile file,
+    public String manage_product_save(@RequestParam(value = "uploadFile", required = false) MultipartFile file,
                                    HttpServletRequest request, SteerTube steerTube) {
         HttpSession session = request.getSession();
         if (session.getAttribute("globalUser") == null) {

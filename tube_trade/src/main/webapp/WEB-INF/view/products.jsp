@@ -61,6 +61,7 @@
 
                 <!--products show begin-->
                 <div id="productsbox">
+                    <%--钛及钛合金管--%>
                     <div class="uk-grid uk-container-center uk-grid-width-1-3" data-uk-grid-margin>
                         <div>
                             <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
@@ -69,7 +70,7 @@
                                         <img src="${ctx}/images/tube/tube_01.jpg" class="gallery" alt="">
                                     </a>
                                 </div>
-                                <a class="uk-link" href="#">Titanium and titanium alloy tube</a>
+                                <a class="uk-link" href="${ctx}/products/show/1">Titanium and titanium alloy tube</a>
                             </div>
                         </div>
                         <div>
@@ -80,7 +81,7 @@
                                         <img src="${ctx}/images/tube/tube_02.jpg" class="gallery" alt="">
                                     </a>
                                 </div>
-                                <a class="uk-link" href="#">Titanium and titanium alloy tube</a>
+                                <a class="uk-link" href="${ctx}/products/show/1">Titanium and titanium alloy tube</a>
                             </div>
                         </div>
                         <div>
@@ -91,11 +92,11 @@
                                         <img src="${ctx}/images/tube/tube_03.jpg" class="gallery" alt="">
                                     </a>
                                 </div>
-                                <a class="uk-link" href="#">Titanium and titanium alloy tube</a>
+                                <a class="uk-link" href="${ctx}/products/show/1">Titanium and titanium alloy tube</a>
                             </div>
                         </div>
                     </div>
-
+                    <%--镍及镍铜合金管--%>
                     <div class="uk-grid uk-container-center uk-grid-width-1-3" data-uk-grid-margin>
                         <div>
                             <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
@@ -105,7 +106,7 @@
                                         <img src="${ctx}/images/tube/tube_04.jpg" class="gallery" alt="">
                                     </a>
                                 </div>
-                                <a class="uk-link" href="#">Titanium and titanium alloy tube</a>
+                                <a class="uk-link" href="${ctx}/products/show/2">Nickel and nickel-copper alloy tube</a>
                             </div>
                         </div>
                         <div>
@@ -116,7 +117,7 @@
                                         <img src="${ctx}/images/tube/tube_05.jpg" class="gallery" alt="">
                                     </a>
                                 </div>
-                                <a class="uk-link" href="#">Titanium and titanium alloy tube</a>
+                                <a class="uk-link" href="${ctx}/products/show/2">Nickel and nickel-copper alloy tube</a>
                             </div>
                         </div>
                         <div>
@@ -127,45 +128,60 @@
                                         <img src="${ctx}/images/tube/tube_06.jpg" class="gallery" alt="">
                                     </a>
                                 </div>
-                                <a class="uk-link" href="#">Titanium and titanium alloy tube</a>
+                                <a class="uk-link" href="${ctx}/products/show/2">Nickel and nickel-copper alloy tube</a>
+                            </div>
+                        </div>
+                    </div>
+                    <%--锆及锆合金管--%>
+                    <div class="uk-grid uk-container-center uk-grid-width-1-3" data-uk-grid-margin>
+                        <div>
+                            <div class="uk-panel uk-panel-box uk-block-muted uk-animation-hover uk-animation-scale tubebox">
+                                <div class="uk-panel-teaser">
+                                    <a href="${ctx}/images/tube/tube_07.jpg" data-lightbox-type="image"
+                                       data-uk-lightbox="{group:'group1'}">
+                                        <img src="${ctx}/images/tube/tube_07.jpg" class="gallery" alt="">
+                                    </a>
+                                </div>
+                                <a class="uk-link" href="${ctx}/products/show/3">Zirconium and zirconium alloy tube</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--products show end-->
-
-                <!--pagination begin-->
-                <nav class="paginationbox">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <span class="paginationInfo">Page: 1 / 1 &nbsp;|&nbsp; 6 records / page</span>
-                </nav>
-                <!--pagination end-->
 
             </div>
+            <!--products show end-->
+
+            <!--pagination begin-->
+            <nav class="paginationbox">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="paginationInfo">Page: 1 / 1 &nbsp;|&nbsp; 9 records / page</span>
+            </nav>
+            <!--pagination end-->
+
         </div>
     </div>
 
-    <!--left list end-->
+<!--left list end-->
 
-    <hr class="uk-news-divider">
+<hr class="uk-news-divider">
 
-    <%@include file="common/bottom.jsp" %>
+<%@include file="common/bottom.jsp" %>
 
 </div>
 </body>

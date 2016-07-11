@@ -32,6 +32,12 @@ public class HomeController {
         return "products";
     }
 
+    @RequestMapping({"/products/show/{type}"})
+    public String manage_product_show(@PathVariable("type") Integer type, HttpServletRequest request) {
+        request.setAttribute("type", type);
+        return "product_show";
+    }
+
     @RequestMapping({"/news_center"})
     public String news_center(HttpServletRequest request) {
         Integer pageSize = 10;
